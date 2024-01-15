@@ -1,163 +1,31 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Website Test 1</h1>
-<p>By Geiv.</p>
-
-<!-- NavBar -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {margin:0;}
-
-.icon-bar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
-
-.icon-bar a {
-  float: left;
-  width: 20%;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
-}
-
-.icon-bar a:hover {
-  background-color: #000;
-}
-
-.active {
-  background-color: #04AA6D;
-}
-</style>
-<body>
-
-<div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-home"></i></a> 
-  <a href="#"><i class="fa fa-search"></i></a> 
-  <a href="#"><i class="fa fa-envelope"></i></a> 
-  <a href="#"><i class="fa fa-globe"></i></a>
-  <a href="#"><i class="fa fa-trash"></i></a> 
-</div> 
-
-<!-- Tabs For Car Series -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 250px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 50%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 50%;
-  border-left: none;
-  height: 250px;
-  display: none;
-}
-
-/* Clear floats after the tab */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
+<head>
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<h2>Hover Tabs</h2>
-<p>Move the mouse over a button inside the tabbed menu:</p>
-
-<div class="tab">
-  <button class="tablinks" onmouseover="openCity(event, 'London')">A1</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Paris')">A2</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">A3</button>
-    <button class="tablinks" onmouseover="openCity(event, 'A4')">A4</button>
-      <button class="tablinks" onmouseover="openCity(event, 'A5')">A5</button>
-</div>
-
-<div id="London" class="tabcontent">
-  <h3>A1</h3>
-  <p>London is the capital city of England.</p>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>A2</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>A3</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<div id="A4" class="tabcontent">
-  <h3>A4</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<div id="A5" class="tabcontent">
-  <h3>A5</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<div class="clearfix"></div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-  
+  <nav>
+    <div class="logo">Geiv</div>
+    <div class="nav items">
+      <a href="/">Home</a>
+      <a href=About.html>About</a>
+      <a href=Contact.html>Contact</a>
+  </nav>
+  <section class="hero"
+    <div class="hero container">
+      <div class="column-left">
+        <h1>Geiv's Cars</h1>
+        <p>Only the most premium of cars. Durable, insurance backed-up and for everyone.</p>
+        <button>Get Started!</button>
+        
+    </div> 
+      <div class="column right">
+        <img src="https://www.mercedes-benz.co.in/content/dam/hq/passengercars/cars/e-class/e-class-saloon-w213-fl-pi/modeloverview/12-2022/images/mercedes-benz-e-class-saloon-w213-696x392-12-2022.png" alt="car
+          " class="hero-image">
+      </div>
+    </section>
 
 </body>
 </html>
